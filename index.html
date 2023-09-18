@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>pizzorino</title>
   </head>
   <body>
     <header>
+      <!-- HEADER -->
       <nav>
-        <img src="" id="logo" alt="Logo image" />
+        <a><h2>PIZZORINO</h2></a>
+        <!--<img src="" id="logo" alt="pizzorino Logo image" /> -->
         <ul>
+          <!-- navlinks -->
           <li><a href="#">link1</a></li>
           <li><a href="#">link2</a></li>
           <li><a href="#">link3</a></li>
@@ -17,54 +20,70 @@
       </nav>
     </header>
     <main>
+      <!-- MAIN -->
       <section id="section1">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <img src="" alt="Image section1" />
+        <!-- SECTION 01 -->
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <img src="https://placehold.co/600x400" alt="Image section1" />
       </section>
+      <hr />
       <section id="section2">
+        <!-- SECTION 02 -->
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ea
           provident eligendi tempore, nulla exercitationem doloribus optio modi
           laborum aut in iusto id quae blanditiis ad nesciunt maiores corrupti
           perspiciatis.
         </p>
-        <img src="" alt="staff picture" />
+        <img src="https://placehold.co/400x300" alt="staff picture" />
       </section>
+      <hr />
       <section id="section3">
+        <!-- SECTION 03 -->
         <div>
+          <!-- 1st pizza -->
           <h3>pizza 01</h3>
+          <img src="https://placehold.co/100x100" alt="pizza picture" />
           <ul>
-            <li>01</li>
-            <li>02</li>
-            <li>03</li>
+            <li>ingredients 01</li>
+            <li>ingredients 02</li>
+            <li>ingredients 03</li>
           </ul>
         </div>
         <div>
+          <!-- 2nd pizza -->
           <h3>pizza 02</h3>
+          <img src="https://placehold.co/100x100" alt="pizza picture" />
           <ul>
-            <li>01</li>
-            <li>02</li>
-            <li>03</li>
+            <li>ingredients 01</li>
+            <li>ingredients 02</li>
+            <li>ingredients 03</li>
           </ul>
         </div>
         <div>
+          <!-- 3rd pizza -->
           <h3>pizza 03</h3>
+          <img src="https://placehold.co/100x100" alt="pizza picture" />
           <ul>
-            <li>01</li>
-            <li>02</li>
-            <li>03</li>
+            <li>ingredients 01</li>
+            <li>ingredients 02</li>
+            <li>ingredients 03</li>
           </ul>
         </div>
         <div>
+          <!-- 4th pizza -->
           <h3>pizza 04</h3>
+          <img src="https://placehold.co/100x100" alt="pizza picture" />
           <ul>
-            <li>01</li>
-            <li>02</li>
-            <li>03</li>
+            <li>ingredients 01</li>
+            <li>ingredients 02</li>
+            <li>ingredients 03</li>
           </ul>
         </div>
       </section>
+      <hr />
       <section id="section4">
+        <!-- SECTION 04 / contact form -->
         <form action="" method="post">
           <label for="name">Name</label>
           <input type="text" id="name" placeholder="eg. John Doe" required />
@@ -78,8 +97,8 @@
           />
           <br />
           <textarea
-            name=""
-            id=""
+            name="textarea"
+            id="textarea"
             cols="30"
             rows="10"
             placeholder="Your message"
@@ -91,24 +110,39 @@
       <hr />
     </main>
     <footer>
+      <!-- FOOTER -->
       <div>
-        <img src="" alt="logo" />
+        <h3 class="logo">PIZZORINO</h3>
+        <!-- <img src="" alt="logo" /> -->
         <div>
-          <p>+213 123 45 67 89</p>
-          <p>
-            adresse : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+          <div class="phone">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>+213 123 45 67 89</p>
+          </div>
+          <div class="location">
+            <ion-icon name="location-outline"></ion-icon>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
         <div>
+          <!-- Social media -->
           <h3>Follow us</h3>
           <div>
-            <a href="#"><img src="" alt="icon01" /></a>
-            <a href="#"><img src="" alt="icon02" /></a>
-            <a href="#"><img src="" alt="icon03" /></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
           </div>
         </div>
       </div>
-      <p>copyright</p>
+      <p>&copy; 2023 code213.tech - Rista120</p>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
