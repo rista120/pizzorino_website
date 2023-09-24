@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --color-dark: #231f20;
+  --color-orangy: #f16a30;
+  --color-orangy-dark: #d0460b;
+  --color-grey-dark: #737373;
+  --color-grey-mid: #c5c7c6;
+  --color-grey-light: #d8dad9;
+  --color-light: #f0f0f0;
+  /* rgb */
+  --rgb-color-dark: 35, 31, 32;
+  --rgb-color-grey-mid: 197, 199, 198;
+
+  /* PADDING */
+  --padding-sections: 5rem calc((100vw - 1200px) / 2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.button-g {
+  font-size: 0.8em;
+  border: 1px solid var(--color-orangy);
+  color: var(--color-orangy);
+  padding: 0.8em 1.2em;
+  letter-spacing: 0.15em;
+  border-radius: 0.5em;
+  transition: 0.3s;
+}
+
+a.button-g:hover {
+  border: 1px solid var(--color-orangy);
+  background-color: var(--color-orangy);
+  color: var(--color-light);
+}
+
+section {
+  padding: var(--padding-sections);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--color-orangy);
+}
+
+/* NAVBAR */
+header {
+  background-color: var(--color-dark);
+  padding: 1rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header a {
+  color: var(--color-light);
+  transition: 0.3s;
+}
+
+header a:not(.logo):hover {
+  color: var(--color-orangy);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 3em;
+}
+
+/* section 01 */
+#section-1 {
+  background: url(./img/toile-fond-texture-mur-beton-solide.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  align-items: center;
+  color: var(--color-light);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.column-left h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.column-left h1 span {
+  color: var(--color-orangy);
+}
+
+.column-left p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.column-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(10px 5px 4px rgba(0, 0, 0, 0.8));
+}
+
+/* Section 02 */
+#section-2 {
+  background-color: var(--color-grey-mid);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.col-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.col-2-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+  color: var(--color-grey-dark);
+  gap: 2rem;
+}
+
+.col-2-right p {
+  line-height: 130%;
+}
+
+/* SECTION 03 */
+#section-3 {
+  background-color: var(--color-grey-light);
+}
+
+#section-3 h2 {
+  width: max-content;
+  margin: 0 auto 2rem auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: var(--color-orangy);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* SECTION 04 */
+#section-4 {
+  background: linear-gradient(
+      rgba(var(--rgb-color-grey-mid), 0.7),
+      rgba(var(--rgb-color-grey-mid), 0.7)
+    ),
+    url("./img/bg-pizza.jpg");
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--color-light);
+  border: 1px solid var(--color-dark);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.formular {
+  padding: 2rem;
+  background-color: rgba(var(--rgb-color-dark), 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.formular h2 {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.client {
+  width: 100%;
+}
+
+.client input {
+  margin-top: 0.3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-dark);
+  color: var(--color-light);
+  border-radius: 0.5em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-grey-dark);
+}
+
+.client:focus-within,
+textarea:focus-within {
+  outline: 1px dashed var(--color-orangy);
+  outline-offset: 0.25rem;
+}
+
+button {
+  font-size: 0.8em;
+  color: var(--color-light);
+  background-color: var(--color-orangy);
+  padding: 0.8em 1.7em;
+  letter-spacing: 0.15em;
+  border: none;
+  border-radius: 0.5em;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-orangy-dark);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-grey-dark);
+  padding: 2rem calc((100vw - 1200px) / 2);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactinfo {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  max-width: 300px;
+}
+
+footer hr {
+  margin: 1rem 0;
+  border: 1px solid var(--color-grey-dark);
+}
+
+.copyright {
+  text-align: center;
+  margin: 1rem 0 3rem 0;
+}

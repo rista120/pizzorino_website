@@ -4,122 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pizzorino</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!-- HEADER -->
+      <a href="" class="logo">PIZZORINO</a>
       <nav>
-        <a><h2>PIZZORINO</h2></a>
-        <!--<img src="" id="logo" alt="pizzorino Logo image" /> -->
         <ul>
-          <!-- navlinks -->
-          <li><a href="#">link1</a></li>
-          <li><a href="#">link2</a></li>
-          <li><a href="#">link3</a></li>
+          <li><a href="#section-2">SECTION 02</a></li>
+          <li><a href="#section-3">SECTION 03</a></li>
+          <li><a href="#section-4">SECTION 04</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- MAIN -->
-      <section id="section1">
+      <section id="section-1">
         <!-- SECTION 01 -->
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <img src="https://placehold.co/600x400" alt="Image section1" />
+        <div class="column-left">
+          <h1><span>Lorem ipsum</span><br />dolor sit amet consectetur</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit
+            laudantium.
+          </p>
+          <a href="" class="button-g">LOREM</a>
+        </div>
+        <div class="column-right">
+          <img src="./img/Hero-pizza.png" alt="Image section1" />
+        </div>
       </section>
-      <hr />
-      <section id="section2">
+      <section id="section-2">
         <!-- SECTION 02 -->
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ea
-          provident eligendi tempore, nulla exercitationem doloribus optio modi
-          laborum aut in iusto id quae blanditiis ad nesciunt maiores corrupti
-          perspiciatis.
-        </p>
-        <img src="https://placehold.co/400x300" alt="staff picture" />
+        <div class="col-2">
+          <img src="./img/Pizzaiolo.jpg" alt="staff picture" />
+        </div>
+        <div class="col-2-right">
+          <h2>SECTION 02</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            varius erat vel nunc efficitur, varius tempus justo dapibus. Nam ac
+            efficitur diam. Phasellus eleifend risus nec justo feugiat semper.
+            Sed interdum diam orci, nec eleifend est ullamcorper quis. Vivamus
+            sollicitudin justo in odio porta, non tristique eros feugiat.
+            Integer porttitor nulla sapien, fermentum ullamcorper arcu
+            consectetur vel.
+          </p>
+          <a href="" class="button-g">READ MORE</a>
+        </div>
       </section>
-      <hr />
-      <section id="section3">
+      <section id="section-3">
         <!-- SECTION 03 -->
-        <div>
-          <!-- 1st pizza -->
-          <h3>pizza 01</h3>
-          <img src="https://placehold.co/100x100" alt="pizza picture" />
-          <ul>
-            <li>ingredients 01</li>
-            <li>ingredients 02</li>
-            <li>ingredients 03</li>
-          </ul>
-        </div>
-        <div>
-          <!-- 2nd pizza -->
-          <h3>pizza 02</h3>
-          <img src="https://placehold.co/100x100" alt="pizza picture" />
-          <ul>
-            <li>ingredients 01</li>
-            <li>ingredients 02</li>
-            <li>ingredients 03</li>
-          </ul>
-        </div>
-        <div>
-          <!-- 3rd pizza -->
-          <h3>pizza 03</h3>
-          <img src="https://placehold.co/100x100" alt="pizza picture" />
-          <ul>
-            <li>ingredients 01</li>
-            <li>ingredients 02</li>
-            <li>ingredients 03</li>
-          </ul>
-        </div>
-        <div>
-          <!-- 4th pizza -->
-          <h3>pizza 04</h3>
-          <img src="https://placehold.co/100x100" alt="pizza picture" />
-          <ul>
-            <li>ingredients 01</li>
-            <li>ingredients 02</li>
-            <li>ingredients 03</li>
-          </ul>
+        <h2>SECTION 03</h2>
+        <!-- pizzas -->
+        <div class="card-container">
+          <!-- 01 -->
+          <div class="card">
+            <img src="./img/pizza01.png" alt="" />
+            <div class="txt">
+              <h3>Pizza 01</h3>
+              <ul>
+                <li>Ingredient 01</li>
+                <li>Ingredient 02</li>
+                <li>Ingredient 03</li>
+                <li>Ingredient 04</li>
+                <li>Ingredient 05</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="card">
+            <img src="./img/pizza02.png" alt="" />
+            <div class="txt">
+              <h3>Pizza 01</h3>
+              <ul>
+                <li>Ingredient 01</li>
+                <li>Ingredient 02</li>
+                <li>Ingredient 03</li>
+                <li>Ingredient 04</li>
+                <li>Ingredient 05</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="card">
+            <img src="./img/pizza03.png" alt="" />
+            <div class="txt">
+              <h3>Pizza 01</h3>
+              <ul>
+                <li>Ingredient 01</li>
+                <li>Ingredient 02</li>
+                <li>Ingredient 03</li>
+                <li>Ingredient 04</li>
+                <li>Ingredient 05</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 04 -->
+
+          <div class="card">
+            <img src="./img/pizza04.png" alt="" />
+            <div class="txt">
+              <h3>Pizza 01</h3>
+              <ul>
+                <li>Ingredient 01</li>
+                <li>Ingredient 02</li>
+                <li>Ingredient 03</li>
+                <li>Ingredient 04</li>
+                <li>Ingredient 05</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
-      <hr />
-      <section id="section4">
+
+      <section id="section-4">
         <!-- SECTION 04 / contact form -->
-        <form action="" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="eg. John Doe" required />
-          <br />
-          <label for="tel">Phone</label>
-          <input
-            type="tel"
-            name="phone"
-            id="tel"
-            placeholder="+213 000 .. .. .."
-          />
-          <br />
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-            placeholder="Your message"
-          ></textarea>
-          <br />
-          <input type="submit" value="submit" />
-        </form>
+
+        <div class="contact-container">
+          <div class="formular">
+            <!-- Form col -->
+            <h2>CONTACT</h2>
+
+            <form action="" method="post">
+              <div class="client">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="eg. John Doe"
+                  required
+                />
+              </div>
+
+              <div class="client">
+                <label for="tel">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="tel"
+                  placeholder="+213 000 .. .. .."
+                  required
+                />
+              </div>
+
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.406107466633!2d3.02248327646235!3d36.760823972258365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb30067978485%3A0x322ee2e0ad13b54!2sCode213%20Val%20d&#39;Hydra!5e0!3m2!1sfr!2sdz!4v1695559292028!5m2!1sfr!2sdz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
-      <hr />
     </main>
     <footer>
       <!-- FOOTER -->
-      <div>
+      <div class="footer-info">
         <h3 class="logo">PIZZORINO</h3>
         <!-- <img src="" alt="logo" /> -->
         <div>
-          <div class="phone">
+          <div class="phone contactinfo">
             <ion-icon name="call-outline"></ion-icon>
             <p>+213 123 45 67 89</p>
           </div>
-          <div class="location">
+          <div class="location contactinfo">
             <ion-icon name="location-outline"></ion-icon>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
@@ -134,7 +203,8 @@
           </div>
         </div>
       </div>
-      <p>&copy; 2023 code213.tech - Rista120</p>
+      <hr />
+      <p class="copyright">&copy; 2023 code213.tech - Rista120</p>
     </footer>
     <script
       type="module"
